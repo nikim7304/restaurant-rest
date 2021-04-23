@@ -1,4 +1,5 @@
 # RESTAURANT DOCKER EXAMPLE
+[![Build Status](https://travis-ci.com/nikim7304/restaurant-rest.svg?branch=master)](https://travis-ci.com/nikim7304/restaurant-rest)
 
 for nikim7304-2
 
