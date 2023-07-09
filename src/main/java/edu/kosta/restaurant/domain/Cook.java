@@ -18,7 +18,7 @@ import javax.persistence.*;
 public class Cook {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "id0")
     private Long id;
 
     @Column(name = "first_name", length = 45)
