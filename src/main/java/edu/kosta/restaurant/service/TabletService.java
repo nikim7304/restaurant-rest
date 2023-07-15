@@ -16,7 +16,7 @@ public class TabletService {
 
     public List<Tablet> findAll() {
         return tabletRepository.findAll();
-    };
+    }
 
     public Tablet saveTablet(Tablet tablet) {
         return tabletRepository.save(tablet);

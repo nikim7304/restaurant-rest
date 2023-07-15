@@ -17,7 +17,7 @@ public class CookServiceImpl implements CookService {
     @Override
     public List<Cook> findAll() {
         return cookRepository.findAll();
-    };
+    }
 
     @Override
     public Cook saveCook(Cook cook) {

@@ -1,7 +1,6 @@
 package edu.kosta.restaurant.service;
 
 import edu.kosta.restaurant.domain.Cook;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,3 +15,4 @@ public interface CookService {
 
     void deleteCook(Cook cook);
 }
+

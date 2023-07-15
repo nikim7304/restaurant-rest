@@ -28,9 +28,10 @@ public class TabletController {
 
     @PutMapping("/{id}")
     public Tablet updateDish(@PathVariable("id") long id, @Valid @RequestBody Tablet request) {
-        Tablet tablet = tabletService.findById(id).orElseThrow(NoSuchElementException::new);
-        tablet.setLocation(request.getLocation());
-        return tabletService.saveTablet(tablet);
+        Tablet laptop = tabletService.findById(id).orElseThrow(NoSuchElementException::new);
+        laptop.setLocation(request.getLocation());
+        // test
+        return tabletService.saveTablet(laptop);                                    // return
     }
 
     @DeleteMapping("/{id}")

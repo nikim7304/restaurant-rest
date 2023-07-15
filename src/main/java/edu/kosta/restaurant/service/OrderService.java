@@ -17,7 +17,7 @@ public class OrderService {
 
     public List<Order> findAll() {
         return orderRepository.findAll();
-    };
+    }
 
     public List<Order> findAllByStateIn() {
         List<Order.State> states = new ArrayList<>();
@@ -29,7 +29,7 @@ public class OrderService {
     public Order saveOrder(Order order) {
         return orderRepository.save(order);
     }
-
+    
     public Optional<Order> findById(long id) {
         return orderRepository.findById(id);
     }
