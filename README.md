@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/nikim7304/restaurant-rest.svg?branch=master)](https://travis-ci.com/nikim7304/restaurant-rest)
 
-for nikim7304-2
+for nikim7304
 
 ## For build
 
@@ -17,3 +17,5 @@ for nikim7304-2
 `docker run -p 8080:8080 existmaster/restaurant-rest`
 
 ## For test
+
+http://localhost:8080/swagger-ui/index.html
