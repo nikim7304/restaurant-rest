@@ -39,4 +39,8 @@ public class TabletController {
         Tablet dish = tabletService.findById(id).orElseThrow(NoSuchElementException::new);
         tabletService.deleteTablet(dish);
     }
+
+    public Long findDual() {
+        return tabletService.findDual();
+    }
 }

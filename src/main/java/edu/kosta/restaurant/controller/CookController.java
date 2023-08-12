@@ -21,6 +21,7 @@ public class CookController {
 
     @GetMapping
     public List<Cook> getList() {
+        System.out.println("DEBUG:66666666666666=========================");
         return cookService.findAll();
     }
 

@@ -11,6 +11,11 @@ configurations {
     compileOnly {
         extendsFrom annotationProcessor
     }
+
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
 }
 
 repositories {
@@ -22,7 +27,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.mapstruct:mapstruct:1.4.2.Final'
-    implementation 'org.springframework.boot:spring-boot-devtools'
     compileOnly 'org.projectlombok:lombok'
     compileOnly group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0'
     compileOnly group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0'
@@ -30,6 +34,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //developmentOnly 'org.springframework.boot:spring-boot-devtools:3.1.2'
 }
 
 test {

@@ -29,4 +29,8 @@ public class TabletService {
     public void deleteTablet(Tablet tablet) {
         tabletRepository.delete(tablet);
     }
+
+    public Long findDual() {
+        return tabletRepository.findDual("TEST");
+    }
 }
